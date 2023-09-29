@@ -2,17 +2,21 @@ import React, {Fragment, useState, useEffect} from "react";
 
 const ListTodos = () => {
     
+    const [todos, setTodos] = useState([]);
+    
     async function getTodos () {
         const res = await fetch("http://localhost:5000/todos");
 
         const todoArray = await res.json();
-        console.log(todoArray);
+        setTodos(todoArray);
     }
 
     useEffect(()=>{
- 
+
+        getTodos();
     },[]);
 
+    console.log(todos)
     return (
         <Fragment>
             <table className="table mt-5">
@@ -30,8 +34,18 @@ const ListTodos = () => {
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                    </tr>
-                */}
+                    </tr> */}
+                
+                {
+                    todos.map(todo =>{
+                        <tr>
+                            <td>{todo.description}</td>
+                            <td>Edist</td>
+                            <td>Delete</td>
+                        </tr>
+                    })
+                }
+                
                 </tbody>
             </table>
         </Fragment>)
