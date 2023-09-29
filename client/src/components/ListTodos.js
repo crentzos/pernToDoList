@@ -15,7 +15,7 @@ const ListTodos = () => {
 
     return (
         <Fragment>
-            <table class="table">
+            <table className="table mt-5">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
