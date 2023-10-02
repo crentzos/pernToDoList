@@ -1,4 +1,4 @@
-# pernToDoList
+# PERN ToDoList
 This is a Fullstack web application, meaning I created both the User Interface and the server-side logic and infrastructure we need for our app to be functional, based on the PERN (PostgreSQL, Express.js, React, Node.js) designed to manage To-Do items.
 
 More specifically:
@@ -36,14 +36,8 @@ DB_PASSWORD=your_database_password
 DB_DATABASE=your_database_name
 DB_HOST=your_database_host
 DB_PORT=your_database_port
-JWT_SECRET=your_secret_key ```
-
-
-
-
-
-
-
+JWT_SECRET=your_secret_key
+ ```
 
 Getting Started:
   
@@ -59,35 +53,47 @@ Node.js: Download and install Node.js from nodejs.org.
 1. Clone this repository to your local machine:
   
 Copy code:
+```bash
 git clone https://github.com/HImHome/pernToDoList
+```
 
 2. Navigate to the project directory:
 
 Copy code:
+```bash
 cd pern-stack-todo-list
+```
 
 3. Install the server dependencies:
 
 Copy code:
+```bash
 cd server
 npm install
+```
 
 4. Install the client dependencies:
 
 Copy code:
+```bash
 cd ../client
 npm install
+```
 
 
 Usage
 Start the server:
 
 Copy code:
+```bash
   cd server
   npm start
+```
 
 Start the client:
 
 Copy code:
+```bash
   cd ../client
   npm start
+```
