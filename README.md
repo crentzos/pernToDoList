@@ -29,12 +29,14 @@ Configuration:
   Rename the .env.example file in the server directory to .env and update it with your database credentials and secret key for JWT authentication.
 
 Copy code:
+
+```bash
 DB_USERNAME=your_database_username
 DB_PASSWORD=your_database_password
 DB_DATABASE=your_database_name
 DB_HOST=your_database_host
 DB_PORT=your_database_port
-JWT_SECRET=your_secret_key
+JWT_SECRET=your_secret_key ```
 
 
 
